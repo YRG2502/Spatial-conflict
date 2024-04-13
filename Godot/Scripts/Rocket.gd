@@ -6,8 +6,10 @@ extends CharacterBody2D
 var target = position
 var enable_movement = false
 
+
+
 func _input(event):
-	if event.is_action_pressed("ui_mouse_left"):
+	if event.is_action_pressed("ui_mouse_left") and enable_movement == false:
 		enable_movement = true
 		get_node("Label").queue_free()
 	pass
@@ -21,3 +23,12 @@ func _physics_process(delta):
 		velocity
 	if position.distance_to(target) > 10:
 		move_and_slide()
+
+func _on_area_2d_body_entered(body):
+	print("entered", body)
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_exited(body):
+	print("exited", body)
+	pass # Replace with function body.

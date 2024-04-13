@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/ChangeSceneButton.gd" id="1_64wol"]
 
 [node name="RetryPopup" type="Node2D"]
+process_mode = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 modulate = Color(1, 1, 1, 0.117647)
