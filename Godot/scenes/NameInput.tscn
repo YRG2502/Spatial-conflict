@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cre3pryglu86p"]
+[gd_scene load_steps=3 format=3 uid="uid://bregbhy8cluok"]
 
 [ext_resource type="Script" path="res://Scripts/LineEdit.gd" id="1_ks5mb"]
+[ext_resource type="Script" path="res://Scripts/ConfirmNameButton.gd" id="2_aahni"]
 
 [node name="NameInput" type="Node2D"]
 
@@ -42,3 +43,15 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Enter Your Name:"
+
+[node name="Button" type="Button" parent="Container"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 472.0
+offset_right = 632.0
+offset_bottom = 515.0
+theme_override_colors/font_pressed_color = Color(0.937255, 0.270588, 0.25098, 1)
+theme_override_colors/font_hover_color = Color(0.0196078, 1, 0.00392157, 1)
+theme_override_font_sizes/font_size = 25
+text = "Confirm"
+script = ExtResource("2_aahni")

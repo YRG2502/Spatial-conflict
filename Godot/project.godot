@@ -14,3 +14,7 @@ config/name="Hackathon UniCS"
 run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+UserSettings="*res://scripts/UserSettings.gd"
