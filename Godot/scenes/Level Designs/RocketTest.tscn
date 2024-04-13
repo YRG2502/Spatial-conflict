@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bxt1v4ncu84if"]
 
-[ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Rocket.tscn" id="1_6oo0c"]
+[ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Collision Stuffs/Rocket.tscn" id="1_6oo0c"]
 
 [node name="RocketTest" type="Node2D"]
 
