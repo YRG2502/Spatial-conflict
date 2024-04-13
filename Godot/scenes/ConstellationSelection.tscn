@@ -50,30 +50,35 @@ offset_left = 99.0
 offset_top = 68.0
 offset_right = 302.0
 offset_bottom = 235.0
+script = ExtResource("4_te7xt")
 
 [node name="Button3" type="Button" parent="ColorRect"]
 offset_left = 789.0
 offset_top = 68.0
 offset_right = 1008.0
 offset_bottom = 246.0
+script = ExtResource("4_te7xt")
 
 [node name="Button4" type="Button" parent="ColorRect"]
 offset_left = 140.0
 offset_top = 305.0
 offset_right = 327.0
 offset_bottom = 463.0
+script = ExtResource("4_te7xt")
 
 [node name="Button5" type="Button" parent="ColorRect"]
 offset_left = 457.0
 offset_top = 81.0
 offset_right = 667.0
 offset_bottom = 250.0
+script = ExtResource("4_te7xt")
 
 [node name="Button6" type="Button" parent="ColorRect"]
 offset_left = 838.0
 offset_top = 307.0
 offset_right = 1041.0
 offset_bottom = 490.0
+script = ExtResource("4_te7xt")
 
 [node name="Label" type="Label" parent="ColorRect"]
 offset_left = 8.0
