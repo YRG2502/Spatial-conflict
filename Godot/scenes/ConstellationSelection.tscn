@@ -1,9 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://vfmark36gp5m"]
+[gd_scene load_steps=6 format=3 uid="uid://jggh2078rhum"]
 
 [ext_resource type="Texture2D" uid="uid://dvfgd3yive2ib" path="res://assets/images/const1test.png" id="1_t2d65"]
 [ext_resource type="Texture2D" uid="uid://dvn17f3k22jxn" path="res://assets/images/const2test.png" id="2_1ir0p"]
 [ext_resource type="Texture2D" uid="uid://basybbax2vty5" path="res://assets/images/Earth.png" id="3_a2t2h"]
 [ext_resource type="Script" path="res://Scripts/SelectConstButton.gd" id="4_te7xt"]
+
+[sub_resource type="GDScript" id="GDScript_lvp56"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var username = UserSettings.get_username()
+	self.text = \"Welcome abroad, Capt. \" + username + \"!\"
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="ConstellationSelection" type="Node2D"]
 
@@ -32,3 +47,12 @@ offset_top = 141.0
 offset_right = 490.0
 offset_bottom = 329.0
 script = ExtResource("4_te7xt")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 262.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 20
+text = "Welcome abroad, Captain!"
+script = SubResource("GDScript_lvp56")
