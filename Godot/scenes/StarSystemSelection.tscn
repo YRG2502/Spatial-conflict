@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxmh5o28m0cl"]
+[gd_scene load_steps=3 format=3 uid="uid://bxmh5o28m0cl"]
 
+[ext_resource type="Script" path="res://Scripts/SelectStarButton.gd" id="1_bfa0j"]
 [ext_resource type="Texture2D" uid="uid://da2xq8ecnuypj" path="res://assets/images/Constellations/Const5.png" id="1_pttvo"]
 
 [node name="StarSystemSelection" type="Node2D"]
@@ -9,7 +10,55 @@ offset_right = 1153.0
 offset_bottom = 642.0
 color = Color(0, 0, 0, 1)
 
-[node name="Const5" type="Sprite2D" parent="."]
+[node name="Button" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 83.0
+offset_right = 474.0
+offset_bottom = 160.0
+script = ExtResource("1_bfa0j")
+
+[node name="Button2" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 719.0
+offset_top = 440.0
+offset_right = 807.0
+offset_bottom = 517.0
+script = ExtResource("1_bfa0j")
+
+[node name="Button3" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 481.0
+offset_right = 489.0
+offset_bottom = 558.0
+script = ExtResource("1_bfa0j")
+
+[node name="Button4" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 234.0
+offset_right = 915.0
+offset_bottom = 311.0
+script = ExtResource("1_bfa0j")
+
+[node name="Button5" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 304.0
+offset_right = 378.0
+offset_bottom = 381.0
+script = ExtResource("1_bfa0j")
+
+[node name="Button6" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 196.0
+offset_right = 680.0
+offset_bottom = 273.0
+script = ExtResource("1_bfa0j")
+
+[node name="Const5" type="Sprite2D" parent="ColorRect"]
 position = Vector2(602, 313.5)
 scale = Vector2(6.48, 5.27)
 texture = ExtResource("1_pttvo")
