@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvn17f3k22jxn"
-path="res://.godot/imported/const2test.png-9530cbfbf79eeb780c3ad678c8f2b8fb.ctex"
+uid="uid://bri2ns4yls111"
+path="res://.godot/imported/Const2.png-1abda84a57eb9ee2893e22efa34eebdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/const2test.png"
-dest_files=["res://.godot/imported/const2test.png-9530cbfbf79eeb780c3ad678c8f2b8fb.ctex"]
+source_file="res://assets/images/Constellations/Const2.png"
+dest_files=["res://.godot/imported/Const2.png-1abda84a57eb9ee2893e22efa34eebdd.ctex"]
 
 [params]
 
