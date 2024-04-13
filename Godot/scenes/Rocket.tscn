@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6bpgac8o3d5r"]
+
+[ext_resource type="Script" path="res://scripts/Rocket.gd" id="1_g1ipf"]
+[ext_resource type="Texture2D" uid="uid://r5ibv8ye4fa2" path="res://icon.svg" id="1_ldwnv"]
+
+[node name="Rocket" type="CharacterBody2D"]
+script = ExtResource("1_g1ipf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ldwnv")
