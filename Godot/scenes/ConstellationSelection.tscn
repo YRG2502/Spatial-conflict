@@ -1,9 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://jggh2078rhum"]
+[gd_scene load_steps=11 format=3 uid="uid://jggh2078rhum"]
 
-[ext_resource type="Texture2D" uid="uid://dvfgd3yive2ib" path="res://assets/images/const1test.png" id="1_t2d65"]
-[ext_resource type="Texture2D" uid="uid://dvn17f3k22jxn" path="res://assets/images/const2test.png" id="2_1ir0p"]
+[ext_resource type="Script" path="res://Scripts/Earth.gd" id="2_m1xyr"]
 [ext_resource type="Texture2D" uid="uid://basybbax2vty5" path="res://assets/images/Earth.png" id="3_a2t2h"]
+[ext_resource type="Texture2D" uid="uid://ck236nytoqbbk" path="res://assets/images/Constellations/Const1.png" id="3_cpdxg"]
+[ext_resource type="Texture2D" uid="uid://bri2ns4yls111" path="res://assets/images/Constellations/Const2.png" id="4_30e3s"]
 [ext_resource type="Script" path="res://Scripts/SelectConstButton.gd" id="4_te7xt"]
+[ext_resource type="Texture2D" uid="uid://dykispjfw5gii" path="res://assets/images/Constellations/Const3.png" id="5_s1odt"]
+[ext_resource type="Texture2D" uid="uid://buxaf7ha3r7om" path="res://assets/images/Constellations/Const4.png" id="6_1q2kn"]
+[ext_resource type="Texture2D" uid="uid://da2xq8ecnuypj" path="res://assets/images/Constellations/Const5.png" id="7_qilht"]
+[ext_resource type="Texture2D" uid="uid://c507b070d0gqo" path="res://assets/images/Constellations/Const6.png" id="8_mjlh2"]
 
 [sub_resource type="GDScript" id="GDScript_lvp56"]
 script/source = "extends Label
@@ -27,28 +32,50 @@ offset_right = 1151.0
 offset_bottom = 646.0
 color = Color(0, 0, 0, 1)
 
-[node name="Const1Test" type="Sprite2D" parent="ColorRect"]
-position = Vector2(254, 183)
-scale = Vector2(0.440104, 0.435185)
-texture = ExtResource("1_t2d65")
-
-[node name="Const2Test" type="Sprite2D" parent="ColorRect"]
-position = Vector2(833, 163)
-scale = Vector2(0.551215, 0.435185)
-texture = ExtResource("2_1ir0p")
-
-[node name="Earth" type="Sprite2D" parent="."]
+[node name="Earth" type="Sprite2D" parent="ColorRect"]
 position = Vector2(600, 705)
 texture = ExtResource("3_a2t2h")
+script = ExtResource("2_m1xyr")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 160.0
-offset_top = 141.0
-offset_right = 490.0
-offset_bottom = 329.0
+[node name="Button" type="Button" parent="ColorRect"]
+offset_left = 469.0
+offset_top = 306.0
+offset_right = 689.0
+offset_bottom = 478.0
 script = ExtResource("4_te7xt")
 
-[node name="Label" type="Label" parent="."]
+[node name="Button2" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 68.0
+offset_right = 302.0
+offset_bottom = 235.0
+
+[node name="Button3" type="Button" parent="ColorRect"]
+offset_left = 789.0
+offset_top = 68.0
+offset_right = 1008.0
+offset_bottom = 246.0
+
+[node name="Button4" type="Button" parent="ColorRect"]
+offset_left = 140.0
+offset_top = 305.0
+offset_right = 327.0
+offset_bottom = 463.0
+
+[node name="Button5" type="Button" parent="ColorRect"]
+offset_left = 457.0
+offset_top = 81.0
+offset_right = 667.0
+offset_bottom = 250.0
+
+[node name="Button6" type="Button" parent="ColorRect"]
+offset_left = 838.0
+offset_top = 307.0
+offset_right = 1041.0
+offset_bottom = 490.0
+
+[node name="Label" type="Label" parent="ColorRect"]
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 262.0
@@ -56,3 +83,33 @@ offset_bottom = 36.0
 theme_override_font_sizes/font_size = 20
 text = "Welcome abroad, Captain!"
 script = SubResource("GDScript_lvp56")
+
+[node name="Const1" type="Sprite2D" parent="ColorRect"]
+position = Vector2(199.5, 153)
+scale = Vector2(1.75, 1.72)
+texture = ExtResource("3_cpdxg")
+
+[node name="Const2" type="Sprite2D" parent="ColorRect"]
+position = Vector2(553, 171.5)
+scale = Vector2(1.92, 1.69)
+texture = ExtResource("4_30e3s")
+
+[node name="Const3" type="Sprite2D" parent="ColorRect"]
+position = Vector2(899.5, 159)
+scale = Vector2(1.91, 1.66)
+texture = ExtResource("5_s1odt")
+
+[node name="Const4" type="Sprite2D" parent="ColorRect"]
+position = Vector2(230.5, 394.5)
+scale = Vector2(1.95, 1.65)
+texture = ExtResource("6_1q2kn")
+
+[node name="Const5" type="Sprite2D" parent="ColorRect"]
+position = Vector2(581.5, 385.5)
+scale = Vector2(1.79, 1.57)
+texture = ExtResource("7_qilht")
+
+[node name="Const6" type="Sprite2D" parent="ColorRect"]
+position = Vector2(933, 395)
+scale = Vector2(1.86, 1.68)
+texture = ExtResource("8_mjlh2")
