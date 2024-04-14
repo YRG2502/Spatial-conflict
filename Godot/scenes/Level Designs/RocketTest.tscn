@@ -9,4 +9,4 @@
 position = Vector2(136, 288)
 
 [node name="Asteroids" parent="." instance=ExtResource("2_6rlvy")]
-position = Vector2(832, 184)
+position = Vector2(683, 276)
