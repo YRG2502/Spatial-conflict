@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dciw4fq8xgs6u"]
 
-[ext_resource type="Script" path="res://scenes/User Interface/TimerLabel.gd" id="1_o4tsn"]
+[ext_resource type="Script" path="res://scripts/TimerLabel.gd" id="1_o4tsn"]
 
 [node name="TimerLabel" type="Node2D"]
 script = ExtResource("1_o4tsn")

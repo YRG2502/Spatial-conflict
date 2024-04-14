@@ -5,11 +5,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.z_index = 1
 	pass # Replace with function body.
 
 func _start_timer():
-	
+	self.z_index = 1
 	timer.start()
 
 func time_left_to_live():
