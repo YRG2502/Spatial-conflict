@@ -1,3 +1,70 @@
-[gd_scene format=3 uid="uid://vh2csbkb5mi3"]
+[gd_scene load_steps=2 format=3 uid="uid://vh2csbkb5mi3"]
+
+[ext_resource type="Texture2D" uid="uid://bobce14bbh6wr" path="res://assets/images/Planets/planet4.png" id="1_kf3et"]
 
 [node name="Planet1" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8.0
+offset_top = 16.0
+offset_right = 1144.0
+offset_bottom = 663.0
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="ColorRect"]
+offset_left = 380.0
+offset_top = 129.0
+offset_right = 790.0
+offset_bottom = 550.0
+columns = 3
+
+[node name="Button" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button2" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button3" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button4" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button5" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button6" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button7" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button8" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button9" type="Button" parent="ColorRect/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Planet1" type="Sprite2D" parent="ColorRect"]
+texture_filter = 1
+position = Vector2(479, 428)
+scale = Vector2(14.13, 13.6074)
+texture = ExtResource("1_kf3et")

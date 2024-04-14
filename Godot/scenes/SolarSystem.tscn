@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dxgr3pkyaa13i"]
+[gd_scene load_steps=12 format=3 uid="uid://dxgr3pkyaa13i"]
 
+[ext_resource type="Script" path="res://Scripts/HideText.gd" id="1_ajn85"]
 [ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet3.gd" id="1_pkkql"]
 [ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet1.gd" id="2_f2n20"]
 [ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet4.gd" id="3_dn4hi"]
@@ -10,6 +11,20 @@
 [ext_resource type="Texture2D" uid="uid://bobce14bbh6wr" path="res://assets/images/Planets/planet4.png" id="8_0fqv5"]
 [ext_resource type="Texture2D" uid="uid://cjbu2tcpr137g" path="res://assets/images/Planets/planet3.png" id="9_4rt25"]
 
+[sub_resource type="GDScript" id="GDScript_hmrgl"]
+script/source = "extends TextEdit
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="SolarSystem" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -19,7 +34,21 @@ offset_right = 1153.0
 offset_bottom = 649.0
 color = Color(0, 0, 0, 1)
 
+[node name="HideTextBtn" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.267
+anchor_top = -0.37
+anchor_right = -0.267
+anchor_bottom = -0.37
+offset_left = 305.584
+offset_top = 236.39
+offset_right = 1457.58
+offset_bottom = 886.39
+script = ExtResource("1_ajn85")
+
 [node name="Planet3Btn" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 829.0
 offset_top = 125.0
 offset_right = 947.0
@@ -35,6 +64,7 @@ offset_bottom = 592.0
 script = ExtResource("2_f2n20")
 
 [node name="Planet4Btn" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 104.0
 offset_top = 110.0
 offset_right = 215.0
@@ -73,3 +103,23 @@ texture = ExtResource("8_0fqv5")
 position = Vector2(881, 239)
 scale = Vector2(2.72, 2.72)
 texture = ExtResource("9_4rt25")
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -376.0
+offset_top = -188.0
+offset_right = 376.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 26
+text = "The star and its orbiting planets are waiting to be discovered and explored. However, there's a slight problem - the device is malfunctioning! Time is now moving at an unstable and blinding pace. We need to act fast, scan and mine each of the planets quickly before it's too late. The star is beginning to swell, and we'll be swallowed if we're too late.
+"
+editable = false
+wrap_mode = 1
+script = SubResource("GDScript_hmrgl")
