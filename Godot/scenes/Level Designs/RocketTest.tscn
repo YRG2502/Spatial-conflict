@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxt1v4ncu84if"]
+[gd_scene load_steps=4 format=3 uid="uid://bxt1v4ncu84if"]
 
 [ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Collision Stuffs/Rocket.tscn" id="1_6oo0c"]
+[ext_resource type="Script" path="res://scripts/RocketTest.gd" id="1_yp7wx"]
 [ext_resource type="PackedScene" uid="uid://2ie06qoqv6hk" path="res://scenes/Collision Stuffs/Asteroids.tscn" id="2_6rlvy"]
 
 [node name="RocketTest" type="Node2D"]
+script = ExtResource("1_yp7wx")
 
 [node name="Rocket" parent="." instance=ExtResource("1_6oo0c")]
 position = Vector2(136, 288)
 
 [node name="Asteroids" parent="." instance=ExtResource("2_6rlvy")]
-position = Vector2(683, 276)
+position = Vector2(832, 184)
+
+[connection signal="area_entered" from="Asteroids" to="." method="_on_asteroids_area_entered"]
