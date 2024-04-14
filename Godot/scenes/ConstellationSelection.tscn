@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://jggh2078rhum"]
+[gd_scene load_steps=12 format=3 uid="uid://ph43t6peg8tc"]
 
+[ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_h5y4j"]
 [ext_resource type="Script" path="res://Scripts/Earth.gd" id="2_m1xyr"]
 [ext_resource type="Texture2D" uid="uid://basybbax2vty5" path="res://assets/images/Earth.png" id="3_a2t2h"]
 [ext_resource type="Texture2D" uid="uid://ck236nytoqbbk" path="res://assets/images/Constellations/Const1.png" id="3_cpdxg"]
@@ -32,12 +33,18 @@ offset_right = 1151.0
 offset_bottom = 646.0
 color = Color(0, 0, 0, 1)
 
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect"]
+position = Vector2(575.188, 323)
+scale = Vector2(0.617083, 0.631373)
+texture = ExtResource("1_h5y4j")
+
 [node name="Earth" type="Sprite2D" parent="ColorRect"]
 position = Vector2(600, 705)
 texture = ExtResource("3_a2t2h")
 script = ExtResource("2_m1xyr")
 
 [node name="Button" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 469.0
 offset_top = 306.0
 offset_right = 689.0
@@ -53,6 +60,7 @@ offset_bottom = 235.0
 script = ExtResource("4_te7xt")
 
 [node name="Button3" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 789.0
 offset_top = 68.0
 offset_right = 1008.0
@@ -60,6 +68,7 @@ offset_bottom = 246.0
 script = ExtResource("4_te7xt")
 
 [node name="Button4" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 140.0
 offset_top = 305.0
 offset_right = 327.0
@@ -67,6 +76,7 @@ offset_bottom = 463.0
 script = ExtResource("4_te7xt")
 
 [node name="Button5" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 457.0
 offset_top = 81.0
 offset_right = 667.0
@@ -74,6 +84,7 @@ offset_bottom = 250.0
 script = ExtResource("4_te7xt")
 
 [node name="Button6" type="Button" parent="ColorRect"]
+layout_mode = 0
 offset_left = 838.0
 offset_top = 307.0
 offset_right = 1041.0
@@ -81,12 +92,13 @@ offset_bottom = 490.0
 script = ExtResource("4_te7xt")
 
 [node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 262.0
 offset_bottom = 36.0
 theme_override_font_sizes/font_size = 20
-text = "Welcome abroad, Captain!"
+text = "Where to, Captain?"
 script = SubResource("GDScript_lvp56")
 
 [node name="Const1" type="Sprite2D" parent="ColorRect"]
