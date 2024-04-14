@@ -1,12 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://hq0gh0c63ueo"]
+[gd_scene load_steps=6 format=3 uid="uid://c0dlauno2sn0j"]
 
 [ext_resource type="Script" path="res://scripts/SimpleLevel.gd" id="1_1o0ux"]
 [ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Collision Stuffs/Rocket.tscn" id="1_thabw"]
+[ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="2_21hdd"]
 [ext_resource type="PackedScene" uid="uid://2ie06qoqv6hk" path="res://scenes/Collision Stuffs/Asteroids.tscn" id="2_lblvr"]
-[ext_resource type="PackedScene" uid="uid://cddqyqnmciyto" path="res://scenes/Collision Stuffs/ClearArea.tscn" id="4_lwt5n"]
+[ext_resource type="PackedScene" uid="uid://b5jri3htesnmu" path="res://scenes/Collision Stuffs/ClearArea.tscn" id="4_lwt5n"]
 
 [node name="SimpleLevel" type="Node2D"]
 script = ExtResource("1_1o0ux")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.625, 325)
+scale = Vector2(0.617687, 0.633333)
+texture = ExtResource("2_21hdd")
 
 [node name="Rocket" parent="." instance=ExtResource("1_thabw")]
 position = Vector2(64, 376)
