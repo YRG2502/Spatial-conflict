@@ -13,6 +13,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.rotation += rotation_speed * 0.5
-
+	self.scale.x += 0.005
+	self.scale.y +=0.005
 	pass
-

@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://dv3s8fykkokb2"]
+
+[ext_resource type="Script" path="res://Scripts/MissonAccomplishedFinalEnd.gd" id="1_3flm0"]
+[ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_vfo76"]
+[ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Collision Stuffs/Rocket.tscn" id="2_cth7b"]
+[ext_resource type="PackedScene" uid="uid://2ie06qoqv6hk" path="res://scenes/Collision Stuffs/Asteroids.tscn" id="3_8lh7y"]
+[ext_resource type="Texture2D" uid="uid://d2o0sm8qwks5h" path="res://assets/images/supernova.png" id="3_q5en7"]
+[ext_resource type="Script" path="res://scenes/Collision Stuffs/supernova.gd" id="4_771ha"]
+[ext_resource type="PackedScene" uid="uid://b5jri3htesnmu" path="res://scenes/Collision Stuffs/ClearArea.tscn" id="5_urosv"]
+
+[node name="MissonAccomplished" type="Node2D"]
+script = ExtResource("1_3flm0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.625, 325)
+scale = Vector2(0.617687, 0.633333)
+texture = ExtResource("1_vfo76")
+
+[node name="Rocket" parent="." instance=ExtResource("2_cth7b")]
+position = Vector2(559, 350)
+
+[node name="supernova" parent="." instance=ExtResource("3_8lh7y")]
+position = Vector2(233, 342)
+rotation = -3.42434
+scale = Vector2(2, 2)
+script = ExtResource("4_771ha")
+
+[node name="Sprite2D2" type="Sprite2D" parent="supernova"]
+position = Vector2(-2.40008, 9.60006)
+scale = Vector2(7.15, 7.4)
+texture = ExtResource("3_q5en7")
+
+[node name="ClearArea" parent="." instance=ExtResource("5_urosv")]
+
+[connection signal="area_entered" from="ClearArea" to="." method="_on_clear_area_area_entered"]
