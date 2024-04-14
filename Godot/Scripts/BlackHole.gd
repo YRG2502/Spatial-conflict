@@ -24,4 +24,4 @@ func _process(delta):
 	rocket.global_position -= force * delta
 	
 	# Increase the gravity as you get closer
-	GRAVITY += 1
+	GRAVITY += 0.1

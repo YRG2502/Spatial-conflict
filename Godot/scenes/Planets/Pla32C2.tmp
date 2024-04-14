@@ -13,6 +13,12 @@ offset_right = 1144.0
 offset_bottom = 663.0
 color = Color(0, 0, 0, 1)
 
+[node name="Planet1" type="Sprite2D" parent="ColorRect"]
+texture_filter = 1
+position = Vector2(479, 428)
+scale = Vector2(14.13, 13.6074)
+texture = ExtResource("1_kf3et")
+
 [node name="GridContainer" type="GridContainer" parent="ColorRect"]
 layout_mode = 0
 offset_left = 380.0
@@ -75,9 +81,3 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("3_jcst6")
-
-[node name="Planet1" type="Sprite2D" parent="ColorRect"]
-texture_filter = 1
-position = Vector2(479, 428)
-scale = Vector2(14.13, 13.6074)
-texture = ExtResource("1_kf3et")
