@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ph43t6peg8tc"]
+[gd_scene load_steps=12 format=3 uid="uid://jggh2078rhum"]
 
 [ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_h5y4j"]
 [ext_resource type="Script" path="res://Scripts/Earth.gd" id="2_m1xyr"]
