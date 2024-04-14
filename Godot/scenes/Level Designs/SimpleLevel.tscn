@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://hq0gh0c63ueo"]
+
+[ext_resource type="Script" path="res://scripts/SimpleLevel.gd" id="1_1o0ux"]
+[ext_resource type="PackedScene" uid="uid://b6bpgac8o3d5r" path="res://scenes/Collision Stuffs/Rocket.tscn" id="1_thabw"]
+[ext_resource type="PackedScene" uid="uid://2ie06qoqv6hk" path="res://scenes/Collision Stuffs/Asteroids.tscn" id="2_lblvr"]
+[ext_resource type="PackedScene" uid="uid://cddqyqnmciyto" path="res://scenes/Collision Stuffs/ClearArea.tscn" id="4_lwt5n"]
+
+[node name="SimpleLevel" type="Node2D"]
+script = ExtResource("1_1o0ux")
+
+[node name="Rocket" parent="." instance=ExtResource("1_thabw")]
+position = Vector2(64, 376)
+
+[node name="Asteroids" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(480, 80)
+rotation_speed = -4
+
+[node name="Asteroids2" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(312, 288)
+rotation_speed = -49
+size = 0.645
+
+[node name="Asteroids3" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(568, 336)
+rotation_speed = -44
+
+[node name="Asteroids4" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(336, 528)
+rotation_speed = 51
+size = 0.54
+
+[node name="Asteroids5" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(792, 152)
+rotation = -0.785398
+
+[node name="Asteroids6" parent="." instance=ExtResource("2_lblvr")]
+position = Vector2(848, 544)
+rotation = -0.785398
+rotation_speed = -39
+size = 0.945
+
+[node name="ClearArea" parent="." instance=ExtResource("4_lwt5n")]
+
+[connection signal="area_entered" from="Asteroids" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="Asteroids2" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="Asteroids3" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="Asteroids4" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="Asteroids5" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="Asteroids6" to="." method="_on_asteroids_area_entered"]
+[connection signal="area_entered" from="ClearArea" to="." method="_on_clear_area_area_entered"]
