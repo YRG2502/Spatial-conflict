@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://dxgr3pkyaa13i"]
+
+[ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet3.gd" id="1_pkkql"]
+[ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet1.gd" id="2_f2n20"]
+[ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet4.gd" id="3_dn4hi"]
+[ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet2.gd" id="4_j6dpp"]
+[ext_resource type="Texture2D" uid="uid://bpbivbtiljl01" path="res://assets/images/sun.png" id="5_n27hs"]
+[ext_resource type="Texture2D" uid="uid://pmc5p6gdhqb5" path="res://assets/images/Planets/planet1.png" id="6_2y5cd"]
+[ext_resource type="Texture2D" uid="uid://e6wtxlib1hys" path="res://assets/images/Planets/planet2.png" id="7_2k3nj"]
+[ext_resource type="Texture2D" uid="uid://bobce14bbh6wr" path="res://assets/images/Planets/planet4.png" id="8_0fqv5"]
+[ext_resource type="Texture2D" uid="uid://cjbu2tcpr137g" path="res://assets/images/Planets/planet3.png" id="9_4rt25"]
+
+[node name="SolarSystem" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 1153.0
+offset_bottom = 649.0
+color = Color(0, 0, 0, 1)
+
+[node name="Planet3Btn" type="Button" parent="ColorRect"]
+offset_left = 829.0
+offset_top = 125.0
+offset_right = 947.0
+offset_bottom = 263.0
+script = ExtResource("1_pkkql")
+
+[node name="Planet1Btn" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 623.0
+offset_top = 345.0
+offset_right = 863.0
+offset_bottom = 592.0
+script = ExtResource("2_f2n20")
+
+[node name="Planet4Btn" type="Button" parent="ColorRect"]
+offset_left = 104.0
+offset_top = 110.0
+offset_right = 215.0
+offset_bottom = 221.0
+script = ExtResource("3_dn4hi")
+
+[node name="Planet2Btn" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 402.0
+offset_right = 349.0
+offset_bottom = 576.0
+script = ExtResource("4_j6dpp")
+
+[node name="Star" type="Sprite2D" parent="ColorRect"]
+position = Vector2(589, 293)
+scale = Vector2(0.339028, 0.350746)
+texture = ExtResource("5_n27hs")
+
+[node name="Planet4" type="Sprite2D" parent="ColorRect"]
+position = Vector2(138, 179)
+scale = Vector2(2.8375, 2.8375)
+texture = ExtResource("6_2y5cd")
+
+[node name="Planet2" type="Sprite2D" parent="ColorRect"]
+position = Vector2(244, 577)
+scale = Vector2(4.9775, 4.9775)
+texture = ExtResource("7_2k3nj")
+
+[node name="Planet1" type="Sprite2D" parent="ColorRect"]
+position = Vector2(696, 515)
+scale = Vector2(6.13297, 5.91297)
+texture = ExtResource("8_0fqv5")
+
+[node name="Planet3" type="Sprite2D" parent="ColorRect"]
+position = Vector2(881, 239)
+scale = Vector2(2.72, 2.72)
+texture = ExtResource("9_4rt25")
