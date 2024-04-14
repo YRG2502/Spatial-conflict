@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3d2d4k8fk7e7"]
+[gd_scene load_steps=3 format=3 uid="uid://c3d2d4k8fk7e7"]
 
 [ext_resource type="Script" path="res://Scripts/StartButton.gd" id="1_cnsax"]
+[ext_resource type="Texture2D" uid="uid://jib1e2o0bo4o" path="res://assets/images/constellations_background.jpg" id="1_t1p75"]
 
 [node name="MainMenu" type="Node2D"]
 
@@ -10,6 +11,11 @@ offset_top = 2.0
 offset_right = 1153.0
 offset_bottom = 649.0
 color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect"]
+position = Vector2(576.813, 323.375)
+scale = Vector2(0.766917, 0.64925)
+texture = ExtResource("1_t1p75")
 
 [node name="Button" type="Button" parent="ColorRect"]
 layout_mode = 0
@@ -31,14 +37,14 @@ offset_top = 157.0
 offset_right = 821.0
 offset_bottom = 285.0
 theme_override_font_sizes/font_size = 50
-text = "Space Exploration"
+text = "Blue Sky"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="ColorRect"]
 layout_mode = 0
 offset_left = 480.0
-offset_top = 402.0
+offset_top = 521.0
 offset_right = 707.0
-offset_bottom = 425.0
+offset_bottom = 544.0
 text = "By Mirza, Allen, Yuvan, Jiamin"

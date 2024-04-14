@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://bktpduruq0ovk"]
+
+[ext_resource type="Texture2D" uid="uid://bh76rcsv70pbl" path="res://assets/images/Rocket.png" id="1_p6td1"]
+[ext_resource type="Texture2D" uid="uid://bj6sh2qjjhoog" path="res://assets/images/BlackHole.png" id="2_a60xl"]
+[ext_resource type="Script" path="res://Scripts/BlackHole.gd" id="3_dpmq1"]
+[ext_resource type="Script" path="res://Scripts/BlackHoleLabel.gd" id="4_dj1dh"]
+[ext_resource type="Script" path="res://Scripts/ConfirmMult.gd" id="5_1dxwj"]
+[ext_resource type="Script" path="res://Scripts/Multiplication.gd" id="5_ov3hg"]
+
+[node name="BlackHole" type="Node2D"]
+
+[node name="Rocket" type="Sprite2D" parent="."]
+position = Vector2(137, 102)
+rotation = -1.0472
+texture = ExtResource("1_p6td1")
+
+[node name="Black Hole" type="Sprite2D" parent="."]
+position = Vector2(916, 450)
+scale = Vector2(6.69958, 7.08542)
+texture = ExtResource("2_a60xl")
+script = ExtResource("3_dpmq1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 538.0
+offset_top = 15.0
+offset_right = 949.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 20
+text = "Captain, quickly activate the time machine
+ before you get sucked into the black hole!"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_dj1dh")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 293.0
+offset_top = 523.0
+offset_right = 426.0
+offset_bottom = 591.0
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 44.0
+offset_top = 426.0
+offset_right = 204.0
+offset_bottom = 499.0
+theme_override_font_sizes/font_size = 20
+text = "Solve this to activate
+the time machine:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 455.0
+offset_top = 526.0
+offset_right = 585.0
+offset_bottom = 591.0
+theme_override_font_sizes/font_size = 20
+text = "Confirm"
+script = ExtResource("5_1dxwj")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 511.0
+offset_right = 273.0
+offset_bottom = 595.0
+theme_override_font_sizes/font_size = 25
+text = "Number * Number = "
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_ov3hg")
