@@ -10,6 +10,7 @@ radius = 56.0
 radius = 64.0
 
 [node name="Asteroids" type="Area2D"]
+scale = Vector2(0.625, 0.625)
 script = ExtResource("1_126bj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

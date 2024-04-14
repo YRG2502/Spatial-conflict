@@ -1,26 +1,29 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6bpgac8o3d5r"]
 
 [ext_resource type="Script" path="res://scripts/Rocket.gd" id="1_g1ipf"]
-[ext_resource type="Texture2D" uid="uid://r5ibv8ye4fa2" path="res://icon.svg" id="1_ldwnv"]
+[ext_resource type="Texture2D" uid="uid://bh76rcsv70pbl" path="res://assets/images/Rocket.png" id="2_ymdfr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5nm7s"]
-size = Vector2(112, 112)
+size = Vector2(56, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fide7"]
-size = Vector2(128, 128)
+size = Vector2(64, 32)
 
 [node name="Rocket" type="CharacterBody2D"]
 script = ExtResource("1_g1ipf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ldwnv")
+rotation = 1.5708
+texture = ExtResource("2_ymdfr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0)
 shape = SubResource("RectangleShape2D_5nm7s")
 
 [node name="RocketArea2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RocketArea2D"]
+position = Vector2(8, 0)
 shape = SubResource("RectangleShape2D_fide7")
 
 [node name="Label" type="Label" parent="."]

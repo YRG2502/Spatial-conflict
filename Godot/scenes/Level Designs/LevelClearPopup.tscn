@@ -1,39 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://cjq4sw5lb4fnv"]
+[gd_scene load_steps=2 format=3 uid="uid://c6fdwlocopdsh"]
 
-[ext_resource type="Script" path="res://scripts/ChangeSceneButton.gd" id="1_64wol"]
+[ext_resource type="Script" path="res://scripts/ChangeSceneButton.gd" id="1_xo7lq"]
 
-[node name="RetryPopup" type="Node2D"]
-process_mode = 3
+[node name="LevelClearPopup" type="Node2D"]
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-process_mode = 3
 modulate = Color(1, 1, 1, 0.117647)
 offset_top = 360.0
 offset_right = 1152.0
 offset_bottom = 640.0
 
 [node name="Container" type="Control" parent="CenterContainer"]
-process_mode = 3
 layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="CenterContainer/Container"]
-process_mode = 3
 layout_mode = 2
 offset_left = -176.0
 offset_top = -92.0
 offset_right = 184.0
 offset_bottom = 68.0
-
-[node name="Button" type="Button" parent="."]
-process_mode = 3
-offset_left = 512.0
-offset_top = 464.0
-offset_right = 640.0
-offset_bottom = 500.0
-theme_override_font_sizes/font_size = 20
-text = "Retry"
-script = ExtResource("1_64wol")
-is_retry = true
 
 [node name="Button2" type="Button" parent="."]
 process_mode = 3
@@ -43,15 +28,14 @@ offset_right = 640.0
 offset_bottom = 548.0
 theme_override_font_sizes/font_size = 20
 text = "Select Star"
-script = ExtResource("1_64wol")
+script = ExtResource("1_xo7lq")
 
 [node name="Label" type="Label" parent="."]
-process_mode = 3
 offset_left = 496.0
 offset_top = 424.0
 offset_right = 666.0
 offset_bottom = 459.0
 theme_override_font_sizes/font_size = 25
-text = "You crashed..."
+text = "Arrived!"
 horizontal_alignment = 1
 vertical_alignment = 1
