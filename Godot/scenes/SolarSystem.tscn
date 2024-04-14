@@ -40,19 +40,6 @@ position = Vector2(575.375, 323)
 scale = Vector2(0.616881, 0.633333)
 texture = ExtResource("1_vpgm6")
 
-[node name="HideTextBtn" type="Button" parent="ColorRect"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.267
-anchor_top = -0.37
-anchor_right = -0.267
-anchor_bottom = -0.37
-offset_left = 305.584
-offset_top = 236.39
-offset_right = 1457.58
-offset_bottom = 886.39
-script = ExtResource("1_ajn85")
-
 [node name="Planet3Btn" type="Button" parent="ColorRect"]
 layout_mode = 0
 offset_left = 829.0
@@ -130,3 +117,20 @@ text = "The star and its orbiting planets are waiting to be discovered and explo
 editable = false
 wrap_mode = 1
 script = SubResource("GDScript_hmrgl")
+
+[node name="HideTextBtn2" type="Button" parent="ColorRect"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.267
+anchor_top = -0.37
+anchor_right = -0.267
+anchor_bottom = -0.37
+offset_left = 707.584
+offset_top = 654.39
+offset_right = 1016.58
+offset_bottom = 746.39
+theme_override_font_sizes/font_size = 30
+text = "Press to continue"
+flat = true
+script = ExtResource("1_ajn85")

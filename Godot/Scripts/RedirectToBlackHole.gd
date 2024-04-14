@@ -1,7 +1,7 @@
 extends Button
 
 @export var is_retry = false
-@export var redirect_scene = "res://scenes/StarSystemSelection.tscn"
+@export var redirect_scene = "res://scenes/BlackHole.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
