@@ -1,10 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd4klrggs65bv"]
-
-[ext_resource type="Texture2D" path="res://assets/images/constellations_background.jpg" id="1_csttl"]
+[gd_scene format=3 uid="uid://bd4klrggs65bv"]
 
 [node name="Constellation" type="Node2D"]
 
 [node name="ConstellationsBackground" type="Sprite2D" parent="."]
 position = Vector2(577, 322)
 scale = Vector2(0.766667, 0.636)
-texture = ExtResource("1_csttl")
