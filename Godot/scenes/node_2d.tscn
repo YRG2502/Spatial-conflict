@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bd4klrggs65bv"]
 
-[ext_resource type="Texture2D" uid="uid://jib1e2o0bo4o" path="res://assets/images/constellations_background.jpg" id="1_csttl"]
+[ext_resource type="Texture2D" path="res://assets/images/constellations_background.jpg" id="1_csttl"]
 
 [node name="Constellation" type="Node2D"]
 

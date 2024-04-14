@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3d2d4k8fk7e7"]
 
 [ext_resource type="Script" path="res://Scripts/StartButton.gd" id="1_cnsax"]
-[ext_resource type="Texture2D" uid="uid://jib1e2o0bo4o" path="res://assets/images/constellations_background.jpg" id="1_t1p75"]
+[ext_resource type="Texture2D" path="res://assets/images/constellations_background.jpg" id="1_t1p75"]
 
 [node name="MainMenu" type="Node2D"]
 

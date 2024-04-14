@@ -1,11 +1,11 @@
 extends Node2D
 
-var popup_scene = preload("res://scenes/Level Designs/RetryPopup.tscn")
-var popup_scene = preload("res://scenes/Level Designs/LevelClearPopup.tscn")
+var popup_scene = preload("res://scenes/User Interface/RetryPopup.tscn")
+var popup_scene = preload("res://scenes/User Interface/LevelClearPopup.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var my_scene = load("res://scenes/Level Designs/RetryPopup.tscn")
+	var my_scene = load("res://scenes/User Interface/RetryPopup.tscn")
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
