@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfl57w1kuxldm"]
+[gd_scene load_steps=6 format=3 uid="uid://b6353riykvcdy"]
 
-[ext_resource type="Script" path="res://scenes/Planets/GridContainer1.gd" id="1_qhaen"]
-[ext_resource type="Script" path="res://scenes/Planets/WhiteMethButtonPlanet1.gd" id="2_r50l6"]
-[ext_resource type="Texture2D" uid="uid://e6wtxlib1hys" path="res://assets/images/Planets/planet2.png" id="3_m516h"]
-[ext_resource type="Script" path="res://scenes/Planets/GoToPlanet3.gd" id="4_ruhnt"]
+[ext_resource type="Script" path="res://scenes/Planets/GridContainer1.gd" id="1_t8cyw"]
+[ext_resource type="Script" path="res://scenes/Planets/WhiteMethButtonPlanet1.gd" id="2_8ufn5"]
+[ext_resource type="Texture2D" uid="uid://pmc5p6gdhqb5" path="res://assets/images/Planets/planet1.png" id="3_mssaq"]
+[ext_resource type="Script" path="res://scenes/Planets/GoToPlanet4.gd" id="4_peuik"]
 
-[sub_resource type="GDScript" id="GDScript_nmju7"]
+[sub_resource type="GDScript" id="GDScript_clo8r"]
 script/source = "extends TextEdit
 
 
@@ -19,7 +19,7 @@ func _process(delta):
 	pass
 "
 
-[node name="Planet2" type="Node2D"]
+[node name="Planet4" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -8.0
@@ -35,67 +35,67 @@ offset_top = 129.0
 offset_right = 790.0
 offset_bottom = 550.0
 columns = 3
-script = ExtResource("1_qhaen")
+script = ExtResource("1_t8cyw")
 
 [node name="Button" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button2" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button3" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button4" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button5" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button6" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button7" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button8" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
 [node name="Button9" type="Button" parent="ColorRect/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("2_r50l6")
+script = ExtResource("2_8ufn5")
 
-[node name="Planet2" type="Sprite2D" parent="ColorRect"]
+[node name="Planet4" type="Sprite2D" parent="ColorRect"]
 texture_filter = 1
-position = Vector2(523, 605)
-scale = Vector2(16.9207, 16.1008)
-texture = ExtResource("3_m516h")
+position = Vector2(452, 410)
+scale = Vector2(16.3104, 15.52)
+texture = ExtResource("3_mssaq")
 
 [node name="TextEdit" type="TextEdit" parent="ColorRect"]
 visible = false
@@ -116,7 +116,7 @@ text = "You've collected all the materials available on this planet. Move on to 
 "
 editable = false
 wrap_mode = 1
-script = SubResource("GDScript_nmju7")
+script = SubResource("GDScript_clo8r")
 
 [node name="HideTextBtn2" type="Button" parent="ColorRect"]
 process_mode = 3
@@ -134,4 +134,4 @@ offset_bottom = 722.39
 theme_override_font_sizes/font_size = 30
 text = "Press to continue"
 flat = true
-script = ExtResource("4_ruhnt")
+script = ExtResource("4_peuik")
