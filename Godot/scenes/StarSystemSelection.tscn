@@ -12,8 +12,8 @@ offset_bottom = 642.0
 color = Color(0, 0, 0, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="ColorRect"]
-position = Vector2(576.625, 320.5)
-scale = Vector2(0.616613, 0.628431)
+position = Vector2(576.625, 324)
+scale = Vector2(0.616613, 0.635294)
 texture = ExtResource("1_dqb5f")
 
 [node name="Button" type="Button" parent="ColorRect"]

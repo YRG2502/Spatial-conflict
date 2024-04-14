@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b4ybrhvkiksly"]
+[gd_scene load_steps=18 format=3 uid="uid://b4ybrhvkiksly"]
 
 [ext_resource type="Script" path="res://Scripts/HideText.gd" id="1_ajn85"]
 [ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet3.gd" id="1_pkkql"]
@@ -9,8 +9,13 @@
 [ext_resource type="Texture2D" uid="uid://bpbivbtiljl01" path="res://assets/images/sun.png" id="5_n27hs"]
 [ext_resource type="Texture2D" uid="uid://pmc5p6gdhqb5" path="res://assets/images/Planets/planet1.png" id="6_2y5cd"]
 [ext_resource type="Texture2D" uid="uid://e6wtxlib1hys" path="res://assets/images/Planets/planet2.png" id="7_2k3nj"]
+[ext_resource type="Script" path="res://scenes/Star.gd" id="7_fwqtb"]
 [ext_resource type="Texture2D" uid="uid://bobce14bbh6wr" path="res://assets/images/Planets/planet4.png" id="8_0fqv5"]
 [ext_resource type="Texture2D" uid="uid://cjbu2tcpr137g" path="res://assets/images/Planets/planet3.png" id="9_4rt25"]
+[ext_resource type="Script" path="res://scenes/Planet4.gd" id="9_44m0v"]
+[ext_resource type="Script" path="res://scenes/Planet2.gd" id="11_av1sg"]
+[ext_resource type="Script" path="res://scenes/Planet1.gd" id="13_gdlfe"]
+[ext_resource type="Script" path="res://scenes/Planet3.gd" id="15_qqcns"]
 
 [sub_resource type="GDScript" id="GDScript_hmrgl"]
 script/source = "extends TextEdit
@@ -76,27 +81,32 @@ script = ExtResource("4_j6dpp")
 position = Vector2(589, 293)
 scale = Vector2(0.339028, 0.350746)
 texture = ExtResource("5_n27hs")
+script = ExtResource("7_fwqtb")
 
 [node name="Planet4" type="Sprite2D" parent="ColorRect"]
 position = Vector2(138, 179)
 scale = Vector2(2.8375, 2.8375)
 texture = ExtResource("6_2y5cd")
+script = ExtResource("9_44m0v")
 
 [node name="Planet2" type="Sprite2D" parent="ColorRect"]
 position = Vector2(244, 577)
 scale = Vector2(4.9775, 4.9775)
 texture = ExtResource("7_2k3nj")
+script = ExtResource("11_av1sg")
 
 [node name="Planet1" type="Sprite2D" parent="ColorRect"]
 position = Vector2(696, 515)
 scale = Vector2(6.13297, 5.91297)
 texture = ExtResource("8_0fqv5")
+script = ExtResource("13_gdlfe")
 
 [node name="Planet3" type="Sprite2D" parent="ColorRect"]
 position = Vector2(847, 170)
 rotation = -4.4279
 scale = Vector2(2.72, 2.72)
 texture = ExtResource("9_4rt25")
+script = ExtResource("15_qqcns")
 
 [node name="TextEdit" type="TextEdit" parent="ColorRect"]
 layout_mode = 1

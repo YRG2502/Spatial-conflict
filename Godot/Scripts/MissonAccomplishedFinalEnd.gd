@@ -1,8 +1,9 @@
 extends Node2D
-var clear_scene = preload("res://scenes/User Interface/LevelClearPopup.tscn")
+var clear_scene = preload("res://scenes/StarSystemSelection.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	TimerLabel.hide()
 	pass # Replace with function body.
 
 

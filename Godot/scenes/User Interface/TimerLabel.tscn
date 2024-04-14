@@ -6,6 +6,7 @@
 script = ExtResource("1_o4tsn")
 
 [node name="Label" type="Label" parent="."]
+z_index = 2
 offset_left = 1088.0
 offset_top = 8.0
 offset_right = 1140.0
@@ -14,5 +15,9 @@ theme_override_font_sizes/font_size = 20
 text = "00:00
 "
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1145.0
+offset_bottom = 650.0
+
 [node name="Timer" type="Timer" parent="."]
-wait_time = 600.0
+wait_time = 45.0

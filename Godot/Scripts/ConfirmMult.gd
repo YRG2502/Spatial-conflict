@@ -12,6 +12,8 @@ func _pressed():
 	if user_ans == real_ans:
 		print("True")
 		get_tree().change_scene_to_file("res://scenes/SolarSystem.tscn")
+		TimerLabel.modulate = Color(1,1,1,1)
+		TimerLabel._start_timer()
 	else:
 		line_edit.text = ""
 		print("False")
