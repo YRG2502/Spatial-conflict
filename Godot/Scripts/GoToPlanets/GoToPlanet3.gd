@@ -6,7 +6,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _pressed():
-	get_tree().change_scene_to_file("res://scenes/Planet3.tscn")
+	get_tree().change_scene_to_file("res://scenes/Planets/Planet3.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

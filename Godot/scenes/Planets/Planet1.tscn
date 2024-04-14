@@ -1,9 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://vh2csbkb5mi3"]
+[gd_scene load_steps=7 format=3 uid="uid://vh2csbkb5mi3"]
 
 [ext_resource type="Texture2D" uid="uid://bobce14bbh6wr" path="res://assets/images/Planets/planet4.png" id="1_kf3et"]
 [ext_resource type="Script" path="res://scenes/Planets/GridContainer1.gd" id="1_ljnu1"]
 [ext_resource type="Script" path="res://scenes/Planets/Planet1.gd" id="1_tv3n0"]
 [ext_resource type="Script" path="res://scenes/Planets/WhiteMethButtonPlanet1.gd" id="3_jcst6"]
+[ext_resource type="Script" path="res://scenes/Planets/GoToPlanet2.gd" id="5_dy7vr"]
+
+[sub_resource type="GDScript" id="GDScript_588cf"]
+script/source = "extends TextEdit
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="Planet1" type="Node2D"]
 script = ExtResource("1_tv3n0")
@@ -83,3 +98,42 @@ texture_filter = 1
 position = Vector2(479, 428)
 scale = Vector2(14.13, 13.6074)
 texture = ExtResource("1_kf3et")
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -332.0
+offset_top = -41.5
+offset_right = 341.0
+offset_bottom = 174.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 26
+text = "You've collected all the materials available on this planet. Move on to the next one. Time is of essence!
+"
+editable = false
+wrap_mode = 1
+script = SubResource("GDScript_588cf")
+
+[node name="HideTextBtn2" type="Button" parent="ColorRect"]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.267
+anchor_top = -0.37
+anchor_right = -0.267
+anchor_bottom = -0.37
+offset_left = 734.584
+offset_top = 630.39
+offset_right = 1043.58
+offset_bottom = 722.39
+theme_override_font_sizes/font_size = 30
+text = "Press to continue"
+flat = true
+script = ExtResource("5_dy7vr")
