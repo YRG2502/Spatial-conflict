@@ -22,12 +22,12 @@ offset_bottom = 68.0
 
 [node name="Button2" type="Button" parent="."]
 process_mode = 3
-offset_left = 496.0
-offset_top = 511.0
-offset_right = 673.0
-offset_bottom = 547.0
+offset_left = 512.0
+offset_top = 512.0
+offset_right = 640.0
+offset_bottom = 548.0
 theme_override_font_sizes/font_size = 20
-text = "Begin Exploring!"
+text = "Select Star"
 script = ExtResource("1_50mk8")
 
 [node name="Label" type="Label" parent="."]

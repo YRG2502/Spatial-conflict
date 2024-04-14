@@ -1,14 +1,21 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5r3f3u3nypmt"]
+[gd_scene load_steps=11 format=3 uid="uid://eiadccr7bi8r"]
 
 [ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_fu6wd"]
 [ext_resource type="Texture2D" uid="uid://bh76rcsv70pbl" path="res://assets/images/Rocket.png" id="1_p6td1"]
+[ext_resource type="Script" path="res://scenes/BlackHole.gd" id="1_ts6g8"]
 [ext_resource type="Texture2D" uid="uid://bj6sh2qjjhoog" path="res://assets/images/BlackHole.png" id="2_a60xl"]
 [ext_resource type="Script" path="res://Scripts/BlackHole.gd" id="3_dpmq1"]
 [ext_resource type="Script" path="res://Scripts/BlackHoleLabel.gd" id="4_dj1dh"]
 [ext_resource type="Script" path="res://Scripts/ConfirmMult.gd" id="5_1dxwj"]
 [ext_resource type="Script" path="res://Scripts/Multiplication.gd" id="5_ov3hg"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77v8j"]
+size = Vector2(20.232, 38.6506)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ilmii"]
+
 [node name="BlackHole" type="Node2D"]
+script = ExtResource("1_ts6g8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(575.438, 323.25)
@@ -20,12 +27,26 @@ position = Vector2(137, 102)
 rotation = -1.0472
 texture = ExtResource("1_p6td1")
 
-[node name="Black Hole" type="Sprite2D" parent="."]
+[node name="Area2D" type="Area2D" parent="Rocket"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rocket/Area2D"]
+position = Vector2(-0.116035, -9.32536)
+shape = SubResource("RectangleShape2D_77v8j")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Black Hole" type="Sprite2D" parent="Area2D"]
 position = Vector2(916, 450)
 rotation = -0.23911
 scale = Vector2(6.69958, 7.08542)
 texture = ExtResource("2_a60xl")
 script = ExtResource("3_dpmq1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(916, 450)
+rotation = -0.23911
+scale = Vector2(6.69958, 7.08542)
+shape = SubResource("CircleShape2D_ilmii")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 538.0
@@ -75,3 +96,5 @@ text = "Number * Number = "
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_ov3hg")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
