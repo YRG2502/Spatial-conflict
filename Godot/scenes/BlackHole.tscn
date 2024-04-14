@@ -22,6 +22,7 @@ texture = ExtResource("1_p6td1")
 
 [node name="Black Hole" type="Sprite2D" parent="."]
 position = Vector2(916, 450)
+rotation = -0.23911
 scale = Vector2(6.69958, 7.08542)
 texture = ExtResource("2_a60xl")
 script = ExtResource("3_dpmq1")
