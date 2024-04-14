@@ -11,6 +11,7 @@ func _pressed():
 	var real_ans = str(UserSettings.get_ans())
 	if user_ans == real_ans:
 		print("True")
+		get_tree().change_scene_to_file("res://scenes/SolarSystem.tscn")
 	else:
 		line_edit.text = ""
 		print("False")

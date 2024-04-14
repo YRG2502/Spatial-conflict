@@ -78,6 +78,7 @@ scale = Vector2(6.13297, 5.91297)
 texture = ExtResource("8_0fqv5")
 
 [node name="Planet3" type="Sprite2D" parent="ColorRect"]
-position = Vector2(881, 239)
+position = Vector2(847, 170)
+rotation = -4.4279
 scale = Vector2(2.72, 2.72)
 texture = ExtResource("9_4rt25")
