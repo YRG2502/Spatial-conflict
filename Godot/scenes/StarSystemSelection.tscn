@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxmh5o28m0cl"]
+[gd_scene load_steps=4 format=3 uid="uid://12mx64vouy3j"]
 
 [ext_resource type="Script" path="res://Scripts/SelectStarButton.gd" id="1_bfa0j"]
+[ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_dqb5f"]
 [ext_resource type="Texture2D" uid="uid://da2xq8ecnuypj" path="res://assets/images/Constellations/Const5.png" id="1_pttvo"]
 
 [node name="StarSystemSelection" type="Node2D"]
@@ -9,6 +10,11 @@
 offset_right = 1153.0
 offset_bottom = 642.0
 color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect"]
+position = Vector2(576.625, 320.5)
+scale = Vector2(0.616613, 0.628431)
+texture = ExtResource("1_dqb5f")
 
 [node name="Button" type="Button" parent="ColorRect"]
 layout_mode = 0
