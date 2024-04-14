@@ -12,6 +12,7 @@ func _pressed():
 	if user_ans == real_ans:
 		print("True")
 	else:
+		line_edit.text = ""
 		print("False")
 		
 
