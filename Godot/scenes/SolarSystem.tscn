@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dxgr3pkyaa13i"]
+[gd_scene load_steps=13 format=3 uid="uid://b4ybrhvkiksly"]
 
 [ext_resource type="Script" path="res://Scripts/HideText.gd" id="1_ajn85"]
 [ext_resource type="Script" path="res://Scripts/GoToPlanets/GoToPlanet3.gd" id="1_pkkql"]
@@ -55,7 +55,6 @@ script = ExtResource("1_ajn85")
 
 [node name="Planet3Btn" type="Button" parent="ColorRect"]
 layout_mode = 0
-layout_mode = 0
 offset_left = 829.0
 offset_top = 125.0
 offset_right = 947.0
@@ -71,7 +70,6 @@ offset_bottom = 592.0
 script = ExtResource("2_f2n20")
 
 [node name="Planet4Btn" type="Button" parent="ColorRect"]
-layout_mode = 0
 layout_mode = 0
 offset_left = 104.0
 offset_top = 110.0

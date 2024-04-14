@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5r3f3u3nypmt"]
+[gd_scene load_steps=13 format=3 uid="uid://b5r3f3u3nypmt"]
 
 [ext_resource type="Texture2D" uid="uid://cvtgq0g0r56at" path="res://assets/images/Screenshot_2024-04-14_012240.png" id="1_fu6wd"]
 [ext_resource type="Texture2D" uid="uid://bh76rcsv70pbl" path="res://assets/images/Rocket.png" id="1_p6td1"]
 [ext_resource type="Script" path="res://scenes/BlackHole.gd" id="1_ts6g8"]
 [ext_resource type="Texture2D" uid="uid://bj6sh2qjjhoog" path="res://assets/images/BlackHole.png" id="2_a60xl"]
+[ext_resource type="Script" path="res://Scripts/HideText.gd" id="2_hs63b"]
 [ext_resource type="Script" path="res://Scripts/BlackHole.gd" id="3_dpmq1"]
 [ext_resource type="Script" path="res://Scripts/BlackHoleLabel.gd" id="4_dj1dh"]
 [ext_resource type="Script" path="res://Scripts/ConfirmMult.gd" id="5_1dxwj"]
@@ -14,8 +15,34 @@ size = Vector2(20.232, 38.6506)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ilmii"]
 
+[sub_resource type="GDScript" id="GDScript_iv32x"]
+script/source = "extends TextEdit
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="BlackHole" type="Node2D"]
 script = ExtResource("1_ts6g8")
+
+[node name="HideTextBtn" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.267
+anchor_top = -0.37
+anchor_right = -0.267
+anchor_bottom = -0.37
+offset_left = -3.00002
+offset_top = -1.00002
+offset_right = 1149.0
+offset_bottom = 649.0
+script = ExtResource("2_hs63b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(575.438, 323.25)
@@ -43,7 +70,7 @@ texture = ExtResource("2_a60xl")
 script = ExtResource("3_dpmq1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(916, 450)
+position = Vector2(921, 459)
 rotation = -0.23911
 scale = Vector2(6.69958, 7.08542)
 shape = SubResource("CircleShape2D_ilmii")
@@ -96,5 +123,24 @@ text = "Number * Number = "
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_ov3hg")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 198.0
+offset_top = 194.0
+offset_right = 950.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 26
+text = "Seeing a star in a constellation is akin to looking back in time. What we see is what it looked like all those light-years ago. This means the planets here must have been consumed by the host star in its final stages. If this constellation is 314 billion light-years away then travelling back that amount of time should be a good start.
+"
+editable = false
+wrap_mode = 1
+script = SubResource("GDScript_iv32x")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
