@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfckdny4x0ldi"]
+
+[ext_resource type="Texture2D" uid="uid://cf744ysmhqoye" path="res://assets/pickaxe.png" id="1_bv5md"]
+[ext_resource type="Script" path="res://scenes/Planets/PickaxeMining.gd" id="2_asjpo"]
+
+[node name="Pickaxe" type="Node2D"]
+
+[node name="Pickaxe" type="Sprite2D" parent="."]
+position = Vector2(444, 231)
+scale = Vector2(5.96053, 5.96053)
+texture = ExtResource("1_bv5md")
+script = ExtResource("2_asjpo")

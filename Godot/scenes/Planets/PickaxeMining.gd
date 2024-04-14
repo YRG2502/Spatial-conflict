@@ -1,13 +1,11 @@
-extends Button
+extends Sprite2D
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-func _pressed():
-	get_tree().change_scene_to_file("res://scenes/Planets/Planet1.tscn")
+	set_process_input(true)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	# Update cursor position to match mouse position
+	global_position = get_viewport().get_mouse_position()
